@@ -11,6 +11,16 @@ function scrollToBottom() {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+chatBox.onmouseenter = () => {
+// console.log("Hello Auot");
+chatBox.classList.add("active");
+};
+
+chatBox.onmouseleave = () => {
+  // console.log("Hello Auot");
+  chatBox.classList.remove("active");
+  };
+
 sendBtn.onclick = () => {
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "php/insert-chat.php", true);
@@ -36,7 +46,9 @@ setInterval(() => {
         let data = xhr.response;
         // console.log(data);
         chatBox.innerHTML = data;
-        scrollToBottom();
+        if (!chatBox.classList.contains("active")) {
+          scrollToBottom();
+        }
       }
     }
   };

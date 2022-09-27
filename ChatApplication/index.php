@@ -1,9 +1,13 @@
 <?php include_once "header.php"; ?>
 <body>
+   <!-- FOR CURSORS -->
+<div class="cursor-1"></div>
+<div class="cursor-2"></div>
+
    <div class="wrapper">
       <section class="form signup">
          <header>
-            Realtime Chat App
+            SIGNUP
          </header>
          <form action="#">
             <div class="error-txt"></div>
@@ -34,7 +38,7 @@
                <input type="submit" value="SIGNUP">
             </div>
          </form>
-         <div class="link">Already signed up? <a href="login.php">Login Now</a></div>
+         <div class="link">Already have an account? <a href="login.php">Login Now</a></div>
       </section>
    </div>
 

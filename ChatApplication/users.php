@@ -6,8 +6,14 @@ if (!isset($_SESSION['unique_id'])) {
 ?>
 <?php include_once "header.php"; ?>
 <body>
+
+<!-- FOR CURSORS -->
+<div class="cursor-1"></div>
+<div class="cursor-2"></div>
+
+<!-- MAIN PART START -->
    <div class="wrapper">
-      <section class="users">
+      <section class="users wrapper-user">
          <header>
             <?php 
             include_once "php/config.php";
